@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="gadr_partner_healthy" model="gadr.partner">
+    <field name="name_en">Graduates Foundation</field>
+    <field name="name_ar">مؤسسة الخريجين</field>
+    <field 
+                name="binary_file" 
+                type="base64" 
+                file="gadr_backend/static/src/img/mq.png"
+        />
+  </record>
+
+  <record id="gadr_partner_educational" model="gadr.partner">
+    <field name="name_en">Friedrich Ebert Sstiftung</field>
+    <field name="name_ar">فريدريش إيبرت ستيفتونغ</field>
+    <field 
+                name="binary_file" 
+                type="base64" 
+                file="gadr_backend/static/src/img/FES LOGO_20mm_2006.png"
+        />
+  </record>
+
+   <record id="gadr_partner_agricultural" model="gadr.partner">
+    <field name="name_en">konrad adenauer stiftung</field>
+    <field name="name_ar">الزراعي</field>
+    <field 
+                name="binary_file" 
+                type="base64" 
+                file="gadr_backend/static/src/img/01_KAS_Logo_Opt_CMYK_Blau.png"
+        />
+  </record>
+
+  <record id="gadr_partner_water" model="gadr.partner">
+    <field name="name_en">harmony development foundation</field>
+    <field name="name_ar">مؤسسة تطوير الإنسجام</field>
+    <field 
+                name="binary_file" 
+                type="base64" 
+                file="gadr_backend/static/src/img/h_d_f.png"
+        />
+  </record>
+</odoo>

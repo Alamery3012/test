@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="portal_gadr_projects_event_requests" name="Projects">
+        <t t-call="portal.portal_layout">
+          <style>
+            .navbar-light{
+              background-color: #05293f
+            }
+          </style>
+          <t t-set="object" t-value="partner"/>
+          <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]"/>
+          <t t-set="langs" t-value="active_langs[1].split('/').pop()"/>
+          <t t-set="breadcrumbs_searchbar" t-value="True"/>
+          <div t-if="not gadr_projects_event" class="pt96 pb96">
+            <div class="container text-center no-data">
+              <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+              <h2>There are Currently no Projects and events.</h2>
+            </div>
+          </div>
+          <t t-else="">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <t t-foreach="gadr_projects_event" t-as="project">
+                <div class="col">
+                  <div class="card">
+                    <a type="button" data-bs-toggle="modal" t-att-data-bs-target="'#modal_project_{}'.format(project_index)">
+                    <img t-att-src="project.image_url(project, 'binary_file')" class="card-img-top" alt="..." style="height:19rem"/>
+                    <div class="card-body">
+                        <t t-if="langs == 'en'">
+                              
+                          <span t-esc="project.title_en"/>
+                        </t>
+                        <t t-else="">
+                          <span t-esc="project.title_ar"/>
+                        </t>
+                        <div class="text-muted">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span t-esc="project.date"/>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </t>
+            </div>
+            <div t-if="pager" class="o_portal_pager d-flex justify-content-center">
+              <t t-call="portal.pager"/>
+            </div>
+            <t t-call="gadr_website.modal_gadr_projects_event"/>
+          </t>
+        </t>
+      </template>
+
+      <template id="modal_gadr_projects_event">
+
+        <t t-foreach="gadr_projects_event" t-as="project">
+          <div class="modal fade" t-attf-id="modal_project_{{project_index}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+              <div class="modal-content">
+                <div class="p-4">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+      
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-lg-6 pt16 pb16 o_colored_level" style="">
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img t-att-src="project.image_url(project, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+      
+                            </div>
+                            <t t-foreach="project.media_line_ids" t-as="media">
+                              <div class="swiper-slide">
+                                <img t-att-src="project.image_url(media, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+        
+                              </div>
+                            </t>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 pt16 pb16 o_colored_level o_we_force_no_transition">
+                        <t t-if="langs == 'en'">
+                                
+                          <h2 class="o_default_snippet_text" t-esc="project.title_en"/>
+                          <p class="o_default_snippet_text">
+                            <span style="font-size: 14px" t-esc="project.description_en"/>
+                          </p>
+                        </t>
+                        <t t-else="">
+                          <h2 class="o_default_snippet_text" t-esc="project.title_ar"/>
+                          <p class="o_default_snippet_text">
+                            <span style="font-size: 14px" t-esc="project.description_ar"/>
+                          </p>
+                        </t>
+                       
+                        <div class="text-muted">
+                          <i class="fa-regular fa-calendar"></i>
+                          <span t-esc="project.date"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </t>
+      </template>
+</odoo>

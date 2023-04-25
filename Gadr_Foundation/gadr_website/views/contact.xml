@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="beauty_contact_us" inherit_id="website.contactus">
+        <xpath expr="//div[@id='wrap']" position="after">
+            <style>
+                .navbar-light{
+                  background-color: #05293f
+                }
+              </style>
+            <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]" />
+            <t t-set="langs" t-value="active_langs[1].split('/').pop()" />
+            <t t-if="langs=='ar'" t-set="dir" t-value="'ltr'" />
+            <section class="s_cover pt96 o_colored_level s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center pb96 bg-aboutus" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-image: url(&quot;/gadr_website/static/src/img/aboutus.png&quot;); background-position: 50% 67.8202%;">
+                <div class="o_we_bg_filter" style="background: linear-gradient(0deg, rgba(251,200,87,0.5018382352941176) 0%, rgba(5,41,63,0.5998774509803921) 54%, rgba(5,41,63,0.7231267507002801) 100%)"/>
+                    <div class="oe_unremovable container">
+                        <div class="carousel-content col-lg-9 o_colored_level" >
+                          <h4>Contact Us</h4>
+                        </div>
+                  </div>
+                </section>
+            <!--contact
+            start-->
+            <section class="contact-page section-b-space common-bg">
+                <div class="container auth-page">
+                    <div class="row py-5">
+                        <!--Start
+                        left contact us form-->
+                        <div class="col-12 col-lg-8 mb-5 mb-lg-0">
+                            <section class="s_website_form" data-vcss="001"
+                                data-snippet="s_website_form">
+                                <div class="theme-card container">
+                                    <form id="contactus_form" action="/website/form/" method="post"
+                                        enctype="multipart/form-data" class="o_mark_required"
+                                        data-mark="*" data-model_name="mail.mail"
+                                        data-success-mode="redirect"
+                                        data-success-page="/contactus-thank-you"
+                                        data-pre-fill="true">
+                                        <div
+                                            class="s_website_form_rows  s_col_no_bgcolor theme-form">
+                                            <div
+                                                class="form-group col-12 col-md mb-4 s_website_form_field s_website_form_custom s_website_form_required"
+                                                data-type="char" data-name="Field">
+                                                <label for="contact1">Name</label>
+                                                <input id="contact1" type="text"
+                                                    class="form-control s_website_form_input bg-light_gray"
+                                                    name="name" required="" data-fill-with="name" />
+                                            </div>
+                                            <div class="row">
+                                                <div
+                                                    class="form-group col-12 col-md mb-4 s_website_form_field s_website_form_required"
+                                                    data-type="email" data-name="Field">
+                                                    <label for="contact3">Topic</label>
+                                                    <input id="contact3" type="email"
+                                                        class="form-control s_website_form_input bg-light_gray"
+                                                        name="email_from" required=""
+                                                        data-fill-with="email" />
+                                                </div>
+                                                <div
+                                                    class="form-group col-12 col-md mb-4 s_website_form_field s_website_form_required"
+                                                    data-type="char" data-name="Field">
+                                                    <label for="contact5">Email</label>
+                                                    <input id="contact5" type="text"
+                                                        class="form-control s_website_form_input bg-light_gray"
+                                                        name="subject" required="" />
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                data-type="text" data-name="Field">
+                                                <label for="contact6">comment</label>
+                                                <textarea id="contact6"
+                                                    class="form-control s_website_form_input bg-light_gray"
+                                                    name="description" required=""></textarea>
+                                            </div>
+                                            <div class="s_website_form_submit"
+                                                data-name="Submit Button">
+                                                <div style="width: 200px;"
+                                                    class="s_website_form_label" />
+                                                <a href="#" role="button"
+                                                    class="btn btn_dark s_website_form_send">Send
+                                                    Your Message
+                                                </a>
+                                                <span id="s_website_form_result"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="row">
+                                <!-- start Email item-->
+                                <div class="col-12 col-md-4 col-lg-12 mb-3 mb-lg-0">
+                                    <!-- Email-->
+                                    <div class="row border-1 p-4 mb-4 contact-compny">
+                                        <!--start
+                                        contact icon -->
+                                        <div
+                                            class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                                            <h1 class="primary_color fs-4-rem">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </h1>
+                                        </div>
+                                        <!--start
+                                        contact text -->
+                                        <div class="col-12 col-lg text-center text-lg-right">
+                                            <h5 class="">
+                                                <strong>Email</strong>
+                                            </h5>
+                                            <a href="mailto:info@gadr-ye.org" class="link">
+                                                <p>info@gadr-ye.org</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- start Address item-->
+                                <div class="col-12 col-md-4 col-lg-12 mb-3 mb-lg-0">
+                                    <!-- Address-->
+                                    <div class="row border-1 p-4 mb-4 contact-compny">
+                                        <!--start
+                                        contact icon -->
+                                        <div
+                                            class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                                            <h1 class="primary_color fs-4-rem">
+                                                <i class="fa fa-map-marker"></i>
+                                            </h1>
+                                        </div>
+                                        <!--start
+                                        contact text -->
+                                        <div class="col-12 col-lg text-center text-lg-right">
+                                            <h5 class="">
+                                                <strong>Address</strong>
+                                            </h5>
+                                            <h5>Seiyun - Algeria St - Flhoum Bld</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- start Phone item-->
+                                <div class="col-12 col-md-4 col-lg-12 mb-3 mb-lg-0">
+                                    <!-- Phone-->
+                                    <div class="row border-1 p-4 mb-4 contact-compny">
+                                        <!--start
+                                        contact icon -->
+                                        <div
+                                            class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                                            <h1 class="primary_color fs-4-rem">
+                                                <i class="fa fa-phone"></i>
+                                            </h1>
+                                        </div>
+                                        <!--start
+                                        contact text -->
+                                        <div class="col-12 col-lg text-center text-lg-right">
+                                            <h5 class="">
+                                                <strong>Phone</strong>
+                                            </h5>
+                                            <a href="#" class="link">
+                                                <p t-att-dir="dir">+967 773526203</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--contact
+            ends-->
+        </xpath>
+        <xpath expr="//div[@id='wrap']" position="attributes">
+            <attribute name="style">display:none</attribute>
+        </xpath>
+    </template>
+    <record id="website.contactus_thanks" model="website.page">
+        <field name="name">Thanks (Contact us)</field>
+        <field name="type">qweb</field>
+        <field name="url">/contactus-thank-you</field>
+        <field name="website_indexed" eval="False" />
+        <field name="is_published">True</field>
+        <field name="key">website.contactus_thanks</field>
+        <field name="arch" type="xml">
+            <t name="Thanks (Contact us)" t-name="website.contactus_thanks">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="small-section light-grey-bg">
+                            <div class="container mt-4" id="thanks">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="success-text text-center">
+                                            <span
+                                                style="background-color: #ffc857 !important; color: #05293F"
+                                                class="d-block fa fa-4x fa-thumbs-up mx-auto rounded-circle bg-primary" />
+                                            <br />
+                                            <h2>Thank You!</h2>
+                                            <p>Your message has been sent <b>successfully</b>
+                                            </p>
+                                            <p class="text-center">We will get back to you shortly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

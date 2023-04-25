@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="survey_fill_form_start_inherit" inherit_id="survey.survey_fill_form_start">
+        <xpath expr="//button[hasclass('btn-primary')]" position="replace">
+            <button type="submit" value="start" class="btn btn-primary btn-lg">
+                <t t-if="survey.certification">
+                    Start Certification
+                </t>
+                <t t-else="">
+                    Start applying
+                </t>
+            </button>
+        </xpath>
+    </template>
+
+</odoo>

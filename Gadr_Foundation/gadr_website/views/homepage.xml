@@ -1,0 +1,617 @@
+<odoo>
+
+
+  <template inherit_id="website.homepage" name="Home" id="homepage">
+    <xpath expr="//div[@id='wrap']" position="inside">
+      <style>
+        .bg-true {
+          position: fixed;
+          width: 100%;
+      </style>
+      <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]"/>
+      <t t-set="langs" t-value="active_langs[1].split('/').pop()"/>
+
+      <div class="oe_structure">
+       
+        <!-- Start Carousel   -->
+        <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+          <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1674718599217" style="background-image: none;">
+            <ol class="carousel-indicators o_we_no_overlay">
+              <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1674718599217"/>
+              <t t-foreach="range(len(carousel_slide))" t-as="slide">
+                  <li  data-bs-target="#myCarousel1674718599217" t-att-data-bs-slide-to="slide_index + 1" />
+              </t>
+            </ol>
+            <div class="carousel-inner gadrr-slide">
+              <div t-attf-class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level imge_slide active" t-attf-style="background-image: url(&quot;/gadr_website/static/src/img/now.png&quot;)" data-name="Slide">
+                <div class="o_we_bg_filter" style="background: linear-gradient(0deg, rgba(251,200,87,0.5018382352941176) 0%, rgba(5,41,63,0.5998774509803921) 54%, rgba(5,41,63,0.7231267507002801) 100%)"/>
+              </div>
+               <t t-foreach="carousel_slide" t-as="slide">
+                <div t-attf-class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level imge_slide " t-attf-style="background-image: url(#{slide.image_url(slide, 'binary_file')})" data-name="Slide">
+                  <div class="o_we_bg_filter" style="background: linear-gradient(0deg, rgba(251,200,87,0.5018382352941176) 0%, rgba(5,41,63,0.5998774509803921) 54%, rgba(5,41,63,0.7231267507002801) 100%)"/>
+                  <div class="oe_unremovable container">
+                    <div class="row content-slide" data-bs-original-title="" title="" aria-describedby="tooltip190977">
+                      <div class="carousel-content col-lg-9 o_colored_level slide" >
+                         
+                         <t t-if="langs == 'en'">
+                          <h2>
+                            <font t-esc="slide.title_en"/>
+                          </h2>
+                           <p class="d-inline-block text-truncate" t-esc="slide.description_en"/>
+                         </t>
+                         <t t-else="">
+                          <h2>
+                          <font t-esc="slide.title_ar"/>
+                        </h2>
+                          <p class="d-inline-block text-truncate" t-esc="slide.description_ar"/>
+                         </t>
+                       
+                        <div class="my-4 but_view ">
+  
+                          <a class="btn btn-primary" href="/projects">view more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </t>
+             
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1674718599217">
+              <span class="carousel-control-prev-icon"/>
+              <span class="visually-hidden o_default_snippet_text">Previous</span>
+            </a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1674718599217">
+              <span class="carousel-control-next-icon"/>
+              <span class="visually-hidden o_default_snippet_text">Next</span>
+            </a>
+          </div>
+        </section>
+        <!-- End Carousel -->
+
+        <!-- Start About us-->
+        <section class="s_call_to_action o_cc o_cc3 pt48 pb24 o_colored_level" data-snippet="s_image_text" data-name="Image - Text" style="background:#05293F;">
+          <div class="o_container_small">
+            <div class="row align-items-center about">
+              <div class="col-lg pt16 pb16 o_colored_level">
+                <h2 class="o_default_snippet_text fw-bold">About us</h2>
+                <p class="o_default_snippet_text">It is a non-profit organization started in 2021 in 
+                  Yemen under license No. (2021566/) by the 
+                  Ministry of Social Affairs and Labor. This 
+                  organization aims at developing and 
+                  empowering the target groups of society by 
+                  achieving the Millennium Development Goals 
+                  and pursuing to develop the individuals and 
+                  promoting the awareness of the public rights.</p>
+              </div>
+              <div class="my-4 but_view text-center">
+
+                <a class="btn btn-primary" href="/aboutus">view more</a>
+              </div>
+            
+            </div>
+          </div>
+        </section>
+        <!-- End About us -->
+
+      <!-- Start Sector -->
+      <section class="s_features pt32 pb32 o_colored_level">
+        <div  class="carousel slide container sectors">
+          <h2 class="o_default_snippet_text text-center fw-bold">
+          <span>
+            Sectors
+          </span>
+          </h2>
+          <div class="swiper gadr_sector">
+            <div class="swiper-wrapper">
+              <t t-set="gadr_sector_water" t-value="request.env.ref('gadr_backend.gadr_sector_water').id"/>
+              <t t-set="gadr_sector_training" t-value="request.env.ref('gadr_backend.gadr_sector_training').id"/>
+              <t t-set="Contact" t-value="1"/>
+                <t t-foreach="gadr_sector" t-as="sector">
+                  <div class="swiper-slide" style="width:10rem !important">
+                    <div class="testimonialBox text-center h-100">
+                      <div class="dvi-img"> 
+                        <a t-attf-href="/projects/event/#{sector.id}">
+                        <img t-att-src="sector.image_url(sector, 'binary_file')"  class="card-img-tops" alt="..."/>
+                        </a>
+                      </div>
+                      <t t-if="Contact == sector_index">
+                        <img src="/gadr_website/static/src/img/secpat.png"  t-attf-class="card-img secpat #{'transform-en' if langs == 'en' else 'transform-ar'}" alt="..."/>
+                        <t t-set="Contact" t-value=" 2 + sector_index"/>
+                        </t>
+                        <t t-else="">
+                         <img src="/gadr_website/static/src/img/secpat2.png"  t-attf-class="card-img secpat #{'transform-en' if langs == 'en' else 'transform-ar'}" alt="..."/>
+                        </t>
+                      <div class="details text-center p-1">
+                        
+                              <a t-attf-href="/projects/event/#{sector.id}">
+                                <t t-if="langs == 'en'">
+                                  <h5 class="mt-1 fw-bold" t-field="sector.name_en"/>
+                                </t>
+                                <t t-else="">
+                                  <h5 class="mt-1 fw-bold" t-field="sector.name_ar"/>
+                                </t>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </div>
+           
+        </div>
+        </div>
+      </section>
+      <!-- End Sector -->
+
+      <!-- Start Projects And Event -->
+      <section class="pt-4 pb-4 o_colored_level news" data-vcss="001" data-snippet="s_tabs" data-name="Tabs" style="background:#05293F;">
+        <div class="container project_events">
+          <div class="s_tabs_main">
+            <div class="s_tabs_nav mb-3">
+              <ul class="nav justify-content-center nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link  o_default_snippet_text active fw-bold" id="nav_tabs_link_project" data-bs-toggle="tab" href="#nav_tabs_content_project" role="tab" aria-controls="nav_tabs_content_project" aria-selected="true">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" id="nav_tabs_link_events" data-bs-toggle="tab" href="#nav_tabs_content_events" role="tab" aria-controls="nav_tabs_content_events" aria-selected="false">Events</a>
+                </li>
+              </ul>
+            </div>
+            <div class="s_tabs_content tab-content s_tabs_slide_up">
+              <div class="tab-pane fade active show" id="nav_tabs_content_project" role="tabpanel" aria-labelledby="nav_tabs_link_project">
+              <t t-if="not gadr_projects">
+                <div class="container text-center no-data">
+                  <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+                  <h2 style="color:#FFFF">There are Currently no Projects.</h2>
+                </div>
+              </t>
+              <t t-else="">
+                  <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                    <section class="s_text_block" style="background-image: none;" data-name="Text">
+                      <div class="swiper-container gadr_project_event">
+                        <div class="swiper-wrapper">
+                          <t t-foreach="gadr_projects" t-as="project">
+                            <div class="swiper-slide" style="border-radius: 80px 0 80px 0;">
+                              <div class="testimonialBox">
+                                <a type="button" data-bs-toggle="modal" t-att-data-bs-target="'#modal_project_{}'.format(project_index)">
+                                  <img t-att-src="project.image_url(project, 'binary_file')" class="card-img-top" alt="..." style="border-radius: 80px 0 0px 0;height: 15rem; max-height: 15rem;"/>
+                                </a>
+                                <div class="details">
+                                  <a type="button" data-bs-toggle="modal" t-att-data-bs-target="'#modal_project_{}'.format(project_index)">
+                                    <t t-if="langs == 'en'">
+                            
+                                      <span t-esc="project.title_en"/>
+                                    </t>
+                                    <t t-else="">
+                                      <span t-esc="project.title_ar"/>
+                                    </t>
+                                   
+                                  </a>
+                                  <i class="fa-regular fa-calendar"></i>
+                                  <span t-esc="project.date"/>
+                                </div>
+                              </div>
+                            </div>
+                          </t>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="my-4 but_view text-center">
+              
+                          <a class="btn btn-primary" href="/projects">view more</a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </t>
+              </div>
+              <div class="tab-pane fade" id="nav_tabs_content_events" role="tabpanel" aria-labelledby="nav_tabs_link_events">
+              <t t-if="not gadr_event">
+                <div class="container text-center no-data">
+                  <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+                  <h2 style="color:#FFFF">There are Currently no Events.</h2>
+                </div>
+              </t>
+              <t t-else="">
+                  <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                    <section class="s_text_block" style="background-image: none;" data-name="Text">
+                      <div class="swiper-container gadr_project_event">
+                        <div class="swiper-wrapper">
+                          <t t-foreach="gadr_event" t-as="event">
+                            <div class="swiper-slide" style="border-radius: 80px 0 80px 0;">
+                              <div class="testimonialBox">
+                                <a type="button" data-bs-toggle="modal" t-att-data-bs-target="'#modal_event_{}'.format(event_index)">
+                                  <img t-att-src="event.image_url(event, 'binary_file')" class="card-img-top" alt="..." style="border-radius: 80px 0 0px 0; height: 15rem; max-height: 15rem;" />
+                                </a>
+                                <div class="details">
+                                  <a type="button" data-bs-toggle="modal" t-att-data-bs-target="'#modal_event_{}'.format(event_index)">
+                                    <t t-if="langs == 'en'">
+                            
+                                      <span t-esc="event.title_en"/>
+                                    </t>
+                                    <t t-else="">
+                                      <span t-esc="event.title_ar"/>
+                                    </t>
+                                   
+                                  </a>
+                                  <i class="fa-regular fa-calendar"></i>
+                                  <span t-esc="event.date"/>
+                                </div>
+                              </div>
+                            </div>
+                          </t>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="my-4 but_view text-center">
+              
+                          <a class="btn btn-primary" href="/events">view more</a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </t>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Projects And Event -->
+
+      <!--  -->
+      <section class="s_references pt48 pb32 o_colored_level" data-snippet="s_references" data-name="References" style="background-image: none;">
+        <div class="container partners">
+          <div class="g- g-height-2 o_colored_level" style="">
+            <h2  class="o_default_snippet_text text-center"> 
+              <span>
+                Our partners
+              </span>
+            </h2>
+          </div>
+          <div class="row align-items-start" style="">
+            <t t-foreach="gadr_partner" t-as="partner">
+            <div class="o_colored_level g- g-height-2 col-lg">
+              <img  t-att-src="partner.image_url(partner, 'binary_file')"  class="img img-fluid mx-auto" alt=""  data-mimetype="image/png"/>
+            </div>
+            </t>
+          </div>
+        </div>
+      </section>
+     
+      <!--  -->
+      <!-- Start Photo Albums And Video Albums -->
+      <section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+        <div class="container media_media">
+          <div class="s_tabs_main">
+            <h2 class="o_default_snippet_text">
+              <span>
+                Media
+              </span>
+            </h2>
+            <div class="s_tabs_nav mb-3">
+              <ul class="nav justify-content-center nav-justified nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link o_default_snippet_text active" id="nav_tabs_link_photo_albums" data-bs-toggle="tab" href="#nav_tabs_content_photo_albums" role="tab" aria-controls="nav_tabs_content_photo_albums" aria-selected="true">Photo Albums</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="nav_tabs_link_video_albums" data-bs-toggle="tab" href="#nav_tabs_content_video_albums" role="tab" aria-controls="nav_tabs_content_video_albums" aria-selected="false">Video Albums</a>
+                </li>
+              </ul>
+            </div>
+            <div class="s_tabs_content tab-content s_tabs_slide_up">
+              <div class="tab-pane fade active show" id="nav_tabs_content_photo_albums" role="tabpanel" aria-labelledby="nav_tabs_link_photo_albums">
+                <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                  <section class="s_text_block" style="background-image: none;" data-name="Text">
+                    <div class="container s_allow_columns">
+                      <div class="row s_nb_column_fixed">
+                        <t t-foreach="photo_albums" t-as="album">
+                          <div class="o_masonry_col o_snippet_not_selectable col-lg-4 grid">
+                            <figure class="effect-julia">
+                              <img t-att-src="album.image_url(album, 'binary_file')" alt="img22"/>
+                              <figcaption>
+                                <div class="title_album">
+                                  <t t-if="langs == 'en'">
+                          
+                                    <h2 t-esc="album.name_album_en"/>
+                                  </t>
+                                  <t t-else="">
+                                    <h2 t-esc="album.name_album_ar"/>
+                                  </t>
+                                 
+                                  <!-- <h2 t-esc="album.name_album"/> -->
+                                </div>
+                                <div>
+                                  <a class="view_album" t-attf-href="/photo/albums/#{album.id}">
+                                    <span>View Album</span>
+                                    <i class="fa-regular fa-eye"></i>
+                                  </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </t>
+                      </div>
+                      <div class="but_view text-center">
+                        <a class="btn btn-primary" href="/photo/albums">view more</a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav_tabs_content_video_albums" role="tabpanel" aria-labelledby="nav_tabs_link_video_albums">
+                <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                  <section class="s_text_block" style="background-image: none;" data-name="Text">
+                    <div class="container s_allow_columns">
+                      <div class="row s_nb_column_fixed">
+                        <div class="row s_nb_column_fixed">
+                          <t t-foreach="video_albums" t-as="album">
+                            <div class="o_masonry_col o_snippet_not_selectable col-lg-4 grid">
+                              <figure class="effect-julia">
+                                <img t-att-src="album.image_url(album, 'binary_file')" alt="img22"/>
+                                <figcaption>
+                                  <div class="title_album">
+                                    <t t-if="langs == 'en'">
+                          
+                                      <h2 t-esc="album.name_album_en"/>
+                                    </t>
+                                    <t t-else="">
+                                      <h2 t-esc="album.name_album_ar"/>
+                                    </t>
+                                   
+                                  </div>
+                                  <div>
+                                    <a class="view_album" t-attf-href="/video/albums/#{album.id}">
+                                      <span>View Album</span>
+                                      <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                  </div>
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </t>
+                        </div>
+                        <div class="but_view text-center">
+                          <a class="btn btn-primary" href="/video/albums">view more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End  Photo Albums And Video Albums -->
+
+      <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+        <div class="container">
+            <form id="contactus_form" action="/visitor_partner" method="post" enctype="multipart/form-data" class="o_mark_required">
+              <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px; color:#05293f" for="contact1">
+                                <span class="s_website_form_label_content">Name</span>
+                                <span class="s_website_form_mark"> *</span>
+                            </label>
+                            <div class="col-sm">
+                                <input id="contact1" type="text" class="form-control s_website_form_input" name="name" required=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" >
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px; color:#05293f" for="contact2">
+                                <span class="s_website_form_label_content">Phone Number</span>
+                            </label>
+                            <div class="col-sm">
+                                <input id="contact2" type="tel" class="form-control s_website_form_input" name="phone"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" >
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px; color:#05293f" for="city">
+                                <span class="s_website_form_label_content">City</span>
+                            </label>
+                            <div class="col-sm">
+                                <input id="city" type="text" class="form-control s_website_form_input" name="city"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px; color:#05293f" for="contact3">
+                                <span class="s_website_form_label_content">Email</span>
+                                <span class="s_website_form_mark"> *</span>
+                            </label>
+                            <div class="col-sm">
+                                <input id="contact3" type="email" class="form-control s_website_form_input" name="email" required=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+                        <div style="width: 200px;" class="s_website_form_label"/>
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        <span id="s_website_form_result"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+      <t t-call="gadr_website.modal_template"/>
+    </div>
+  </xpath>
+</template>
+
+
+<!-- ============================================== modal ============================================== -->
+<template id="modal_template">
+  <!-- ================================================================= modal Project ================================================================= -->
+  <t t-foreach="gadr_projects" t-as="project">
+    <div class="modal fade" t-attf-id="modal_project_{{project_index}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="p-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 pt16 pb16 o_colored_level" style="">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img t-att-src="project.image_url(project, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+
+                      </div>
+                      <t t-foreach="project.media_line_ids" t-as="media">
+                        <div class="swiper-slide">
+                          <img t-att-src="project.image_url(media, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+  
+                        </div>
+                      </t>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb16 o_colored_level o_we_force_no_transition">
+                  <t t-if="langs == 'en'">
+                          
+                    <h2 class="o_default_snippet_text" t-esc="project.title_en"/>
+                    <p class="o_default_snippet_text">
+                      <span style="font-size: 14px" t-esc="project.description_en"/>
+                    </p>
+                  </t>
+                  <t t-else="">
+                    <h2 class="o_default_snippet_text" t-esc="project.title_ar"/>
+                    <p class="o_default_snippet_text">
+                      <span style="font-size: 14px" t-esc="project.description_ar"/>
+                    </p>
+                  </t>
+                 
+                  <div class="text-muted">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span t-esc="project.date"/>
+                    <br/>
+                    <!-- <i class="fa fa-caret-square-o-right"></i>
+                    <span t-field="project.sector_ids" /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </t>
+
+  <!-- ================================================================= modal Events ================================================================= -->
+  <t t-foreach="gadr_event" t-as="event">
+    <div class="modal fade" t-attf-id="modal_event_{{event_index}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="p-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 pt16 pb16 o_colored_level" style="">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img t-att-src="event.image_url(event, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+
+                      </div>
+                      <t t-foreach="event.media_line_ids" t-as="media">
+                        <div class="swiper-slide">
+                          <img t-att-src="event.image_url(media, 'binary_file')" class="img img-fluid float-start" alt="" loading="lazy" data-original-id="254" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/jpeg" style="" data-bs-original-title="" title="" aria-describedby="tooltip496761" data-quality="74" data-resize-width="800"/>
+  
+                        </div>
+                      </t>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb16 o_colored_level o_we_force_no_transition">
+                  <t t-if="langs == 'en'">
+                          
+                    <h2 class="o_default_snippet_text" t-esc="event.title_en"/>
+                    <p class="o_default_snippet_text">
+                      <span style="font-size: 14px" t-esc="event.description_en"/>
+                    </p>
+                  </t>
+                  <t t-else="">
+                    <h2 class="o_default_snippet_text" t-esc="event.title_ar"/>
+                    <p class="o_default_snippet_text">
+                      <span style="font-size: 14px" t-esc="event.description_ar"/>
+                    </p>
+                  </t>
+                 
+                  <div class="text-muted">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span t-esc="event.date"/>
+                    <br/>
+                    <i class="fa fa-caret-square-o-right"></i>
+                    <span t-field="event.sector_ids" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </t>
+
+</template>
+
+<template id="survey_page_fill"  inherit_id="survey.survey_page_fill">
+  <xpath expr='//t[@t-call="survey.layout"]' position="after">
+    <style>
+      .navbar-light{
+        background-color: #05293f
+      }
+    </style>
+</xpath>
+</template>
+
+<record id="visitor_thanks" model="website.page">
+  <field name="name">Thanks (visitor)</field>
+  <field name="type">qweb</field>
+  <field name="url">/visitor-thank-you</field>
+  <field name="is_published">True</field>
+  <field name="key">gadr_website.visitor_thanks</field>
+  <field name="arch" type="xml">
+      <t name="Thanks (visitor)" t-name="gadr_website.visitor_thanks">
+          <t t-call="website.layout">
+              <div id="wrap" class="oe_structure oe_empty">
+                  <section class="s_text_block pt40 pb40 o_colored_level " data-snippet="s_text_block">
+                      <div class="container s_allow_columns">
+                          <div class="row">
+                              <div class="col-lg-12 col-xl-12 me-lg-auto visitor_thanks" id="thanks">
+                                  <span class="d-block fa fa-4x fa-thumbs-up mx-auto rounded-circle icon"/><br/>
+                                  <h1 class="text-center">Thank You!</h1>
+                                  <div class="pb16 pt16 s_hr" data-snippet="s_hr" data-name="Separator">
+                                      <hr class="mx-auto border-top w-50 border-dark text-center"/>
+                                  </div>
+                                  <h5 class="text-center">
+                                      <span class="fa-solid fa-check rounded-circle icon p-1"/>
+                                      <span>Your message has been sent <b>successfully</b></span>
+                                  </h5>
+                                  <p class="text-center">We will get back to you shortly.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+              </div>
+              <input t-if='website.plausible_shared_key' type='hidden' class='js_plausible_push' data-event-name='Lead Generation' data-event-params='{"CTA": "Contact Us"}' />
+          </t>
+      </t>
+  </field>
+</record>
+
+</odoo>

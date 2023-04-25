@@ -1,0 +1,9 @@
+.card {
+    position: relative;
+    margin: calc(3rem / 2) calc(3rem / 2);
+    background: white;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow: 0 15px 25px rgba( #000, .15 );
+    transition:  box-shadow 250ms ease-in-out, transform 250ms ease-in-out;	
+}

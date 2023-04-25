@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="gadr_sector_healthy" model="gadr.sector">
+    <field name="name_en">Healthy</field>
+    <field name="name_ar">الصحي</field>
+  </record>
+
+  <record id="gadr_sector_educational" model="gadr.sector">
+    <field name="name_en">Educational</field>
+    <field name="name_ar">التعليمي</field>
+  </record>
+
+   <record id="gadr_sector_agricultural" model="gadr.sector">
+    <field name="name_en">Agricultural</field>
+    <field name="name_ar">الزراعي</field>
+  </record>
+
+  <record id="gadr_sector_water" model="gadr.sector">
+    <field name="name_en">Water and the Environment</field>
+    <field name="name_ar">المياه والبيئة</field>
+  </record>
+
+  <record id="gadr_sector_media" model="gadr.sector">
+    <field name="name_en">Media</field>
+    <field name="name_ar">الإعلامي</field>
+  </record>
+
+  <record id="gadr_sector_social" model="gadr.sector">
+    <field name="name_en">Social</field>
+    <field name="name_ar">الإجتماعي</field>
+  </record>
+
+  <record id="gadr_sector_politician" model="gadr.sector">
+    <field name="name_en">Politician</field>
+    <field name="name_ar">السياسي</field>
+  </record>
+
+  <record id="gadr_sector_economist" model="gadr.sector">
+    <field name="name_en">Economist</field>
+    <field name="name_ar">الاقتصادي</field>
+    
+  </record>
+  <record id="gadr_sector_climate" model="gadr.sector">
+    <field name="name_en">Climate</field>
+    <field name="name_ar">المناخ</field>
+   
+  </record>
+
+  <record id="gadr_sector_training" model="gadr.sector">
+    <field name="name_en">Training</field>
+    <field name="name_ar">التدريب</field>
+   
+  </record>
+</odoo>

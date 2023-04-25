@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="gadr_foundation_menu"
+        name="GADR"
+        web_icon="gadr_website,static/src/img/Gadr.png"
+        sequence="2"/>
+    <menuitem
+        id="gadr_events_menu"
+        name="Events"
+        action="gadr_event_action"
+        parent="gadr_foundation_menu"
+        sequence="1"/>
+        
+
+    <menuitem
+        id="gadr_projects_menu"
+        name="Projects"
+        action="gadr_projects_action"
+        parent="gadr_foundation_menu"
+        sequence="2"/>
+
+    <menuitem
+        id="gadr_media_media_menu"
+        name="Media"
+        parent="gadr_foundation_menu"
+        sequence="3"/>
+
+    <menuitem
+        id="gadr_setting_menu"
+        name="Setting"
+        parent="gadr_foundation_menu"
+        sequence="100"/>
+        
+    <menuitem
+        id="gadr_sector_menu"
+        name="Gadr Sector"
+        action="gadr_sector_action"
+        parent="gadr_setting_menu"/>
+
+    <menuitem
+        id="gadr_partner_menu"
+        name="Gadr partner"
+        action="gadr_partner_action"
+        parent="gadr_setting_menu"/>
+        
+    <menuitem
+        id="gadr_photo_albums_menu"
+        name="Photo Albums"
+        action="gadr_photo_albums_action"
+        parent="gadr_media_media_menu"
+    />
+    <menuitem
+        id="gadr_video_albums_menu"
+        name="Video Albums"
+        action="gadr_video_albums_action"
+        parent="gadr_media_media_menu"
+    />
+    <menuitem
+        id="visitor_partner_menu"
+        name="Visitor"
+        action="visitor_partner_action"
+        parent="gadr_foundation_menu"
+        sequence="4"/>
+    <menuitem
+        id="carousel_slide_menu"
+        name="Carousel Slide"
+        action="carousel_slide_action"
+        parent="gadr_foundation_menu"
+        sequence="5"/>
+
+    <record model="ir.ui.menu" id="utm.menu_link_tracker_root">
+        <field name="active">False</field>
+    </record>
+
+    <menuitem id="base.menu_management"
+        name="Apps" 
+        sequence="310" 
+        web_icon="gadr_website,static/src/img/appsGadr.png" 
+        groups="base.group_system"/>
+
+    <menuitem name="Settings"
+        id="base.menu_administration"
+        web_icon="gadr_website,static/src/img/seteinGadr.png"
+        sequence="500"
+        groups="base.group_no_one"/>
+
+    <menuitem name="Discuss"
+        id="mail.menu_root_discuss"
+        action="mail.action_discuss"
+        web_icon="gadr_website,static/src/img/masggGadr.png"
+        groups="base.group_user"
+        sequence="5"/>
+
+    <menuitem name="Website"
+        id="website.menu_website_configuration"
+        sequence="9"
+        groups="base.group_user"
+        web_icon="gadr_website,static/src/img/websiteGadr.png"/>
+
+    <menuitem name="Surveys"
+        id="survey.menu_surveys"
+        sequence="130"
+        groups="survey.group_survey_user"
+        web_icon="gadr_website,static/src/img/srGadr.png"/>
+  
+        
+
+</odoo>

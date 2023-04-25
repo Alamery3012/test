@@ -1,0 +1,28 @@
+:root {
+    --textColor: #ffc857;
+    --darkColor: #c09643;
+    --lightcolor: #F2F4F3;
+    --stemcolor: #05293F;
+}
+.contact-compny{
+    background-color: #fff;
+    border: 2px solid var(--stemcolor);
+    border-radius: 0.5rem;
+}
+.contact-compny i{
+    color:var(--textColor)
+}
+.contact-compny h5{
+    color:var(--stemcolor)
+}
+
+.s_website_form_send{
+    background-color:var(--textColor);
+    color: var(--stemcolor);
+    margin-top:1rem
+}
+.s_website_form_send:hover{
+    background-color:var(--darkColor);
+    /* color: var(--stemcolor); */
+   
+}

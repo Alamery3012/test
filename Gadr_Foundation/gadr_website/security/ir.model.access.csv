@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gadr_website_gadr_website,gadr_website.gadr_website,model_gadr_website_gadr_website,base.group_user,1,1,1,1

@@ -1,0 +1,16 @@
+<odoo>
+
+  <menuitem
+    id="gadr_reports_menu"
+    name="Reports"
+    parent="survey.menu_surveys"
+    sequence="20"
+    />
+  
+ 
+  <menuitem
+  id="survey_user_input_report_menu"
+  name="Survey User Input Report" action="custom_survey.survey_user_input_report_xlsx_action"
+  parent="gadr_reports_menu"
+  sequence="1"/>
+</odoo>

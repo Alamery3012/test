@@ -1,0 +1,330 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gadr_backend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-25 20:40+0000\n"
+"PO-Revision-Date: 2023-01-25 20:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Address</b>\n"
+"                            </span>"
+msgstr "<span class=\"o_form_label o_td_label\" name=\"address_name\"><b>العنوان</b></span>"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__binary_file
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__binary_file
+msgid "Binary File"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.carousel_slide_action
+#: model:ir.model,name:gadr_backend.model_carousel_slide
+#: model:ir.ui.menu,name:gadr_backend.carousel_slide_menu
+msgid "Carousel Slide"
+msgstr ""
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "City"
+msgstr "المدينة"
+
+#. module: gadr_backend
+#: model:ir.model,name:gadr_backend.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "Country"
+msgstr "الدولة"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__create_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__create_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__create_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__create_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__create_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__create_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.gadr_projects_event_view_form
+msgid "Description AR"
+msgstr "الوصف"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__description_ar
+msgid "Description Ar"
+msgstr "الوصف"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__description_en
+#: model_terms:ir.ui.view,arch_db:gadr_backend.gadr_projects_event_view_form
+msgid "Description En"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__display_name
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__display_name
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__display_name
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_event_action
+#: model:ir.ui.menu,name:gadr_backend.gadr_events_menu
+msgid "Events"
+msgstr "فعاليات"
+
+#. module: gadr_backend
+#: model:ir.ui.menu,name:gadr_backend.gadr_foundation_menu
+msgid "GADR"
+msgstr "قادر"
+
+#. module: gadr_backend
+#: model:ir.model,name:gadr_backend.model_gadr_media_media
+msgid "Gadr Media Media"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model,name:gadr_backend.model_gadr_projects_event
+msgid "Gadr Projects"
+msgstr "مشاريع قادر"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__id
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__id
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__id
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__id
+msgid "ID"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__binary_file
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__binary_file
+msgid "Imge"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_res_partner__is_visitor
+#: model:ir.model.fields,field_description:gadr_backend.field_res_users__is_visitor
+msgid "Is Visitor"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide____last_update
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media____last_update
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line____last_update
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__write_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__write_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__write_uid
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__write_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__write_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__write_date
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media_line__media_id
+#: model:ir.ui.menu,name:gadr_backend.gadr_media_media_menu
+#: model_terms:ir.ui.view,arch_db:gadr_backend.gadr_media_media_view_form
+msgid "Media"
+msgstr "وسائل الإعلام"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__media_line_ids
+msgid "Media Line"
+msgstr ""
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "Name"
+msgstr "الاسم"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__name_album
+msgid "Name Album"
+msgstr "اسم الألبوم"
+
+#. module: gadr_backend
+#. odoo-python
+#: code:addons/gadr_backend/models/gadr_project_event.py:0
+#: code:addons/gadr_backend/models/gadr_project_event.py:0
+#: code:addons/gadr_backend/models/gadr_project_event.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_photo_albums_action
+#: model:ir.model.fields.selection,name:gadr_backend.selection__gadr_media_media__type__photo_albums
+#: model:ir.ui.menu,name:gadr_backend.gadr_photo_albums_menu
+msgid "Photo Albums"
+msgstr "البوم الصور"
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_projects_action
+#: model:ir.model.fields.selection,name:gadr_backend.selection__gadr_projects_event__type__projects
+#: model:ir.ui.menu,name:gadr_backend.gadr_projects_menu
+msgid "Projects"
+msgstr "مشاريعنا"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__name
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__name
+msgid "Sequence"
+msgstr "الرقم التسلسلي"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "State"
+msgstr "المنطقة"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "Street 2..."
+msgstr "الشارع 2"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+#: model_terms:ir.ui.view,arch_db:gadr_backend.gadr_projects_event_view_form
+msgid "Street..."
+msgstr "الشارع"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__title_ar
+msgid "Title Ar"
+msgstr "العنوان"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__title_en
+msgid "Title En"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_media_media__type
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__type
+msgid "Type"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_video_albums_action
+#: model:ir.model.fields.selection,name:gadr_backend.selection__gadr_media_media__type__video_albums
+#: model:ir.ui.menu,name:gadr_backend.gadr_video_albums_menu
+msgid "Video Albums"
+msgstr "ألبوم الفيديو"
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.visitor_partner_action
+#: model:ir.ui.menu,name:gadr_backend.visitor_partner_menu
+msgid "Visitor"
+msgstr "الشركاء"
+
+#. module: gadr_backend
+#: model_terms:ir.ui.view,arch_db:gadr_backend.visitor_partner_view_form
+msgid "e.g. Lumber Inc"
+msgstr " مثال الاسم"
+
+#. module: gadr_backend
+#: model:ir.model.fields.selection,name:gadr_backend.selection__gadr_projects_event__type__event
+msgid "event"
+msgstr "القطاع"
+
+#. module: gadr_backend
+#: model:ir.model,name:gadr_backend.model_gadr_media_media_line
+msgid "gadr.media.media.line"
+msgstr ""
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__sector_id
+msgid "sector"
+msgstr "القطاع"
+
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_partner_action
+msgid "Gadr partners"
+msgstr "الشركاء"
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.gadr_sector_action
+msgid "Gadr Sectors"
+msgstr "القطاعات"
+
+#. module: gadr_backend
+#: model:ir.ui.menu,name:gadr_backend.gadr_setting_menu
+msgid "Setting"
+msgstr "الإعدادات"
+
+#. module: gadr_backend
+#: model:ir.actions.act_window,name:gadr_backend.carousel_slide_action
+#: model:ir.model,name:gadr_backend.model_carousel_slide
+#: model:ir.ui.menu,name:gadr_backend.carousel_slide_menu
+msgid "Carousel Slide"
+msgstr "صور البنر"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_partner__name_ar
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_sector__name_ar
+msgid "Name Ar"
+msgstr "الاسم العربي"
+
+#. module: gadr_backend
+#: model:ir.model.fields,field_description:gadr_backend.field_carousel_slide__binary_file
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_partner__binary_file
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_projects_event__binary_file
+#: model:ir.model.fields,field_description:gadr_backend.field_gadr_sector__binary_file
+msgid "Imge"
+msgstr "الصورة"
+
+#. module: gadr_backend
+#: model:ir.model,name:gadr_backend.model_gadr_sector
+#: model:ir.ui.menu,name:gadr_backend.gadr_sector_menu
+msgid "Gadr Sector"
+msgstr "القطاعات"
+
+#. module: gadr_backend
+#: model:ir.ui.menu,name:gadr_backend.gadr_partner_menu
+msgid "Gadr partner"
+msgstr "الشركاء"

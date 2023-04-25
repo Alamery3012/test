@@ -1,0 +1,28 @@
+.activities-projects{
+    .meta-bottom {
+        padding-top: 10px;
+        border-top: 1px solid rgba(34, 34, 34, 0.15);
+        i {
+            color: #555555;
+            display: inline;
+        }
+        a {
+            color: rgba(34, 34, 34, 0.8);
+            transition: 0.3s;
+        }
+        .tags {
+            list-style: none;
+            display: inline;
+            padding: 0;
+            font-size: 14px;
+            li {
+                display: inline-block;
+            }
+            li+li::before {
+                padding-right: 6px;
+                color:$gray-600;
+                content: ",";
+            }
+        }
+    }   
+}

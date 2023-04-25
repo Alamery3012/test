@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="portal_home_photo_albums" inherit_id="portal.portal_breadcrumbs">
+    <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+      <li t-if="page_name == 'photo_albums_page'" t-attf-class="breadcrumb-item #{'active'}">
+        <a t-if="page_name == 'photo_albums_page'" t-attf-href="/photo/albums">Photo Albums
+        </a>
+        <t t-else="">Photo Albums</t>
+      </li>
+    </xpath>
+  </template>
+
+  <template id="portal_my_home_photo_albums" name="Show Available Partner" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+      <t t-call="portal.portal_docs_entry">
+        <t t-set="title">Photo Albums</t>
+        <t t-set="url" t-value="'/photo/albums'"/>
+        <t t-set="placeholder_count" t-value="'photo_albums_count'"/>
+      </t>
+    </xpath>
+  </template>
+
+  <template id="portal_photo_albums" name="Photo Albums">
+    <t t-call="portal.portal_layout">
+      <style>
+        .navbar-light{
+          background-color: #05293f
+        }
+      </style>
+      <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]"/>
+      <t t-set="langs" t-value="active_langs[1].split('/').pop()"/>
+      <t t-set="object" t-value="partner"/>
+      <t t-set="breadcrumbs_searchbar" t-value="True"/>
+      <div t-if="not photo_albums" class="pt96 pb96">
+        <div class="container text-center no-data">
+          <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+          <h2>There are Currently no Photo Albums.</h2>
+        </div>
+      </div>
+      <t t-else="">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <t t-foreach="photo_albums" t-as="album">
+            <div class="col">
+              <div class="card">
+                <img t-att-src="album.image_url(album, 'binary_file')" class="card-img-top" alt="..." style="height:19rem"/>
+                <div class="card-body">
+                  <t t-if="langs == 'en'">
+                    <p t-esc="album.name_album_en"/>
+                   </t>
+                   <t t-else="">
+                    <p t-esc="album.name_album_ar"/>
+                   </t>
+                  
+                  <a class="view_album" t-attf-href="/photo/albums/#{album.id}">
+                    <span>View Album</span>
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </t>
+        </div>
+        <div t-if="pager" class="o_portal_pager d-flex justify-content-center">
+          <t t-call="portal.pager"/>
+        </div>
+      </t>
+    </t>
+  </template>
+
+  <template id="portal_photo_albums_infos" name="Photo">
+    <t t-call="portal.portal_layout">
+      <style>
+        .navbar-light{
+          background-color: #05293f
+        }
+      </style>
+      <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]"/>
+      <t t-set="langs" t-value="active_langs[1].split('/').pop()"/>
+      <t t-set="object" t-value="partner"/>
+      <t t-set="breadcrumbs_searchbar" t-value="True"/>
+      <div t-if="not photo_albums_line" class="pt96 pb96">
+        <div class="container text-center no-data">
+          <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+          <h2>There are Currently no Photo Albums.</h2>
+        </div>
+      </div>
+      <t t-else="">
+        <section class="s_image_gallery o_spc-small o_masonry pt24 pb24 o_colored_level" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
+          <div class="container">
+            <div class="row s_nb_column_fixed">
+              <t t-foreach="photo_albums_line" t-as="albums_line">
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                  <img class="img img-fluid d-block" 
+                  t-att-src="albums_line.media_id.image_url(albums_line, 'binary_file')" 
+                  t-att-data-index="albums_line_index" data-name="Image" 
+                  loading="lazy" t-att-data-original-id="albums_line.id" style="height: 16rem;"/>
+
+                </div>
+              </t>
+            </div>
+          </div>
+          <div t-if="pager" class="o_portal_pager d-flex justify-content-center">
+            <t t-call="portal.pager"/>
+          </div>
+        </section>
+      </t>
+
+    </t>
+  </template>
+
+</odoo>

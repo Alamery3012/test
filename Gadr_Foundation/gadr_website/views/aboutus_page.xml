@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="aboutus_page_template" name="About Us">
+        <t t-call="website.layout">
+          <style>
+            .navbar-light{
+              background-color: #05293f
+            }
+          </style>
+            <section class="s_cover pt96 o_colored_level s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center pb96 bg-aboutus" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-image: url(&quot;/gadr_website/static/src/img/aboutus.png&quot;); background-position: 50% 67.8202%;">
+              <div class="o_we_bg_filter" style="background: linear-gradient(0deg, rgba(251,200,87,0.5018382352941176) 0%, rgba(5,41,63,0.5998774509803921) 54%, rgba(5,41,63,0.7231267507002801) 100%)"/>
+                  <div class="oe_unremovable container">
+                      <div class="carousel-content col-lg-9 o_colored_level" >
+                        <h4 class="fw-bold">About Us</h4>
+                      </div>
+                </div>
+              </section>
+
+              <section class="s_call_to_action o_cc o_cc3 pt48 pb24 o_colored_level" data-snippet="s_image_text" data-name="Image - Text" style="background:#05293F;">
+                <div class="o_container_small">
+                  <div class="row align-items-center about">
+                    <div class="col-lg pt16 pb16 o_colored_level">
+                      <h2 class="o_default_snippet_text fw-bold">About us</h2>
+                      <p class="o_default_snippet_text">It is a non-profit organization started in 2021 in 
+                        Yemen under license No. (2021566/) by the 
+                        Ministry of Social Affairs and Labor. This 
+                        organization aims at developing and 
+                        empowering the target groups of society by 
+                        achieving the Millennium Development Goals 
+                        and pursuing to develop the individuals and 
+                        promoting the awareness of the public rights.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="s_tabs pt48 pb48 o_colored_level aboutus" data-vcss="001" data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                <div class="container">
+                  <div class="s_tabs_main">
+                    <div class="s_tabs_nav mb-3">
+                      <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active fw-bold" id="nav_tabs_link_1674938390586_1165" data-bs-toggle="tab" href="#nav_tabs_Goals" role="tab" aria-controls="nav_tabs_Goals" aria-selected="true">Goals</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link fw-bold" id="nav_tabs_link_1674938390586_1164" data-bs-toggle="tab" href="#nav_tabs_message" role="tab" aria-controls="nav_tabs_message" aria-selected="false">Message</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link o_default_snippet_text fw-bold" id="nav_tabs_link_1674938390586_1163" data-bs-toggle="tab" href="#nav_tabs_vision" role="tab" aria-controls="nav_tabs_vision" aria-selected="false">Vision</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="s_tabs_content tab-content">
+                      <div class="tab-pane fade" id="nav_tabs_vision" role="tabpanel" aria-labelledby="nav_tabs_link_1674938390586_1163">
+                        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                          <section class="s_text_block" style="background-image: none;" data-name="Text">
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                  <div class="pt24 pb24 o_colored_level col-lg-12">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                      <div class="col-lg-4 pb16 o_not_editable">
+                                        <img src="/gadr_website/static/src/img/vision.png" alt="" class="img-fluid mx-auto img o_we_custom_image" style="width: 100% !important;" data-original-id="1319" data-original-src="/web/image/1319-d5bc99a5/Goals.png" data-mimetype="image/png" data-resize-width="690"/>
+                                      </div>
+                                      <div class="col-lg-8 text-center">
+                                        <p style=" text-transform: capitalize;">Sustainable solutions for a bright future </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </section>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="nav_tabs_message" role="tabpanel" aria-labelledby="nav_tabs_link_1674938390586_1164">
+                        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                          <section class="s_text_block" style="background-image: none;" data-name="Text">
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                  <div class="pt24 pb24 o_colored_level col-lg-12">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                      <div class="col-lg-4 pb16 o_not_editable">
+                                        <img src="/gadr_website/static/src/img/message.png" alt="" class="img-fluid mx-auto img o_we_custom_image" style="width: 100% !important;" data-original-id="1319" data-original-src="/web/image/1319-d5bc99a5/Goals.png" data-mimetype="image/png" data-resize-width="690"/>
+                                      </div>
+                                      <div class="col-lg-8 text-center">
+                                        <p style=" text-transform: capitalize;">sustainable for human empowerment</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </section>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade active show" id="nav_tabs_Goals" role="tabpanel" aria-labelledby="nav_tabs_link_1674938390586_1165">
+                        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+                          <section class="s_text_block" style="background-image: none;" data-name="Text">
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                  <div class="pt24 pb24 o_colored_level col-lg-12">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                      <div class="col-lg-4 pb16 o_not_editable">
+                                        <img src="/gadr_website/static/src/img/Goals.png" alt="" class="img-fluid mx-auto img o_we_custom_image" style="width: 100% !important;" data-original-id="1319" data-original-src="/web/image/1319-d5bc99a5/Goals.png" data-mimetype="image/png" data-resize-width="690"/>
+                                      </div>
+                                      <div class="col-lg-8 goals">
+                                        <ul style="list-style-type: none;">
+                                            <i class="s_showcase_icon fa fa-solid fa-1 text-secondary me-3 mt-2"/>
+                                            <h5 class="d-inline-block o_default_snippet_text">Work To</h5>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span>Empower the most economically, socially, 
+                                                  and developmentally vulnerable people.</span>
+                                            </li>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">Development of women and enhance their developmental 
+                                                  role in community service.</span>
+                                            </li>
+                                            <i class="s_showcase_icon fa fa-solid fa-2 text-secondary me-3 mt-2"/>
+                                                <h5 class="d-inline-block o_default_snippet_text">Advocacy and lobbying</h5>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;"> in the field of human rights and spreading awareness
+                                                  and the culture of community dialogue.</span>
+                                            </li>
+                                            <i class="s_showcase_icon fa fa-solid fa-3 text-secondary me-3 mt-2"/>
+                                            <h5 class="d-inline-block o_default_snippet_text">Involving and activating</h5>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">the Foundation's role with the local authority and donor
+                                                  organizations internally and externally.</span>
+                                            </li>
+                                            <i class="s_showcase_icon fa fa-solid fa-4 text-secondary me-3"/>
+                                            <h5 class="d-inline-block o_default_snippet_text">Contribute To</h5>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">early community recovery and achieve living
+                                                   stability for local communities.</span>
+                                            </li>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">providing humanitarian aid to communities affected
+                                                   by wars and conflicts and promoting the principle 
+                                                   of peaceful coexistence.</span>
+                                            </li>
+                                                <i class="s_showcase_icon fa fa-solid fa-5 text-secondary me-3"/>
+                                                <h5 class="d-inline-block o_default_snippet_text">Work To</h5>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">improve the standard of living for society by developing the skills
+                                                     of young people and qualifying them to integrate into the labor market.</span>
+                                            </li>
+                                            <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">develop the values of national loyalty and enhance
+                                                     the concept of participation in society.</span>
+                                            </li>
+                                                <i class="s_showcase_icon fa fa-solid fa-6 text-secondary me-3"/>
+                                              <h5 class="d-inline-block o_default_snippet_text">Promote the principle of partnership</h5>
+                                              <li>
+                                                <img src="/gadr_website/static/src/img/SeekPng.gif" alt="" style="width:1rem"/>
+                                                <span style="text-indent:10px;">and networking in achieving the goals of sustainable development.</span>
+                                              </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+        </t>
+    </template>
+
+</odoo>

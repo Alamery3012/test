@@ -1,0 +1,59 @@
+:root {
+    --textColor: #ffc857;
+    --darkColor: #c09643;
+    --stemcolor: #05293F;
+}
+
+
+.aboutus .nav-pills .nav-link.active{
+
+    background-color: whitesmoke !important;
+    border-bottom:0 ;
+    color: var(--textColor);
+    font-weight: 600;
+    background-image: url(/gadr_website/static/src/img/patrn.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: top;
+    background-size: contain;
+}
+.aboutus .nav-pills .nav-link{
+    background-image: url(/gadr_website/static/src/img/patrens.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: top;
+    background-size: contain;
+    color: var(--textColor);
+    font-size: 25px;
+}
+.aboutus p{
+    font-size:28px
+}
+.goals h5{
+    margin-top: 1rem;
+    color: var(--stemcolor);
+    font-weight: 600;
+}
+.goals ul li span{
+    color: #383838;
+}
+#s_website_form_result{
+    display: none !important;
+}
+.bg-aboutus h4{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffff;
+}
+@media (max-width: 1600px) {
+.bg-aboutus{
+
+    background-size: 85rem 20rem;
+}
+}
+@media (max-width: 991px) {
+    .bg-aboutus{
+
+        background-size: 23rem 20rem;
+    }
+}

@@ -1,0 +1,92 @@
+.activities {
+    h3 {
+        color: $Primary-Color;
+        text-transform: capitalize;
+    }
+    .recent-posts {
+        article {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            background-color: $white;
+            padding: 30px;
+            height: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            .post-img {
+                max-height: 240px;
+                margin: -30px -30px 15px -30px;
+                overflow: hidden;
+                img {
+                    transition: 0.3s;
+                    position: relative;
+                    z-index: 1;
+                }
+                &:hover img {
+                    transform: scale(1.1);
+                }
+            }
+            .title {
+                font-size: 18px;
+                padding: 0;
+                max-height: 100px;
+                min-height: 100px;
+                a {
+                    color: $gray-900;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $gray-700;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .meta-top {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    color: $gray-700;
+                    li+li {
+                        padding-left: 20px;
+                    }
+                    i {
+                        font-size: 16px;
+                        margin-right: 8px;
+                        line-height: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-outline-primary {
+    color: $Primary-Color;
+    border-color: $Primary-Color;
+    border-radius: .2rem;
+    transition: all .4s ease-in;
+    &:hover {
+        background-color: $Primary-Color;
+        border-color: $Primary-Color;
+    }
+    &:focus,
+    &:active:focus {
+        box-shadow: 0 0 0 0.2rem #4192ab66
+    }
+}
+.btn-primary {
+    color: $white;
+    border-color: $Primary-Color;
+    border-radius: .2rem;
+    background-color: $Primary-Color;
+    transition: all .4s ease-in;
+    &:hover {
+        background-color: $Primary-Color-Hover;
+        border-color: $Primary-Color-Hover;
+    }
+    &:focus,
+    &:active:focus {
+        box-shadow: 0 0 0 0.2rem #4192ab66
+    }
+}

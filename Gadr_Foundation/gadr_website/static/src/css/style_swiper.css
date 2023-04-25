@@ -1,0 +1,167 @@
+:root {
+    --textColor: #ffc857;
+    --darkColor: #c09643;
+    --lightcolor: #F2F4F3;
+    --stemcolor: #05293F;
+}
+
+.news {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--stemcolor);
+    overflow: hidden;
+}
+
+.events {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--stemcolor);
+    overflow: hidden;
+}
+
+.gadr_project_event {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.news .gadr_project_event h2 {
+    color: var(--textColor);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.events .gadr_project_event h2 {
+    color: var(--textColor);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.gadr_project_event .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    background: #d1ebff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+    border-radius: 10px;
+}
+
+.gadr_project_event .swiper-slide-active {
+    filter: blur(0px);
+    background: #fff;
+}
+
+.gadr_project_event .testimonialBox {
+    position: relative;
+    width: 100%;
+}
+
+.gadr_project_event .testimonialBox .card-img-tops {
+    height: 19rem;
+}
+
+.gadr_project_event .testimonialBox .quote {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+}
+
+.gadr_project_event .testimonialBox .details {
+    align-items: center;
+    margin-top: 20px;
+    padding: 0.5rem 2.5rem;
+}
+
+.gadr_project_event .testimonialBox .details .imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.gadr_project_event .testimonialBox .details .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gadr_project_event .testimonialBox .details a span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #111111;
+    line-height: 1.1em;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out
+}
+
+.gadr_project_event .testimonialBox .details a span:hover {
+    text-decoration: none;
+    color: #4b4b4b
+}
+
+.gadr_project_event .testimonialBox .details span,
+.gadr_project_event .testimonialBox .details i {
+    font-size: 12px;
+    color: #666;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--textColor);
+}
+
+.dark-mode5 {
+    background-color: var(--lightcolor);
+}
+
+.gadr_sector .swiper-slide {
+    width: 6rem !important;
+}
+
+.gadr_sector .details a {
+    position: relative;
+    text-decoration: none;
+    color: var(--stemcolor)
+}
+
+.gadr_sector .secpat {
+    position: fixed;
+    left: 0;
+  
+    width: 3rem;
+    /* background-image: url(/gadr_website/static/src/img/secpat.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: top;
+    background-size: contain; */
+}
+.transform-en{
+    transform: rotate(70deg);
+}
+.transform-ar{
+    transform: rotate(15deg);
+}
+.gadr_sector .details a:hover {
+    color: #15608f;
+}

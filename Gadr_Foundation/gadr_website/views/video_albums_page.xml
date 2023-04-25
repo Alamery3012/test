@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="portal_video_albums" name="Video Albums">
+    <t t-call="portal.portal_layout">
+      <style>
+        .navbar-light{
+          background-color: #05293f
+        }
+      </style>
+      <t t-set="object" t-value="partner"/>
+      <t t-set="active_langs" t-value="list(filter(lambda lg : lg[0] == lang, languages))[0]"/>
+      <t t-set="langs" t-value="active_langs[1].split('/').pop()"/>
+      <t t-set="breadcrumbs_searchbar" t-value="True"/>
+      <div t-if="not video_albums" class="pt96 pb96">
+        <div class="container text-center no-data">
+          <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+          <h2>There are Currently no video Albums.</h2>
+        </div>
+      </div>
+      <t t-else="">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <t t-foreach="video_albums" t-as="album">
+            <div class="col">
+              <div class="card">
+                <img t-att-src="album.image_url(album, 'binary_file')" class="card-img-top" alt="..." style="height:19rem"/>
+                <div class="card-body">
+                  <t t-if="langs == 'en'">
+                    <p t-esc="album.name_album_en"/>
+                   </t>
+                   <t t-else="">
+                    <p t-esc="album.name_album_ar"/>
+                   </t>
+                    <a class="view_album" t-attf-href="/video/albums/#{album.id}">
+                      <span>View Album</span>
+                      <i class="fa-regular fa-eye"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </t>
+        </div>
+        <div t-if="pager" class="o_portal_pager d-flex justify-content-center">
+          <t t-call="portal.pager"/>
+        </div>
+      </t>
+    </t>
+  </template>
+
+  <template id="portal_video_albums_infos" name="Video">
+    <t t-call="portal.portal_layout">
+      <style>
+        .navbar-light{
+          background-color: #05293f
+        }
+      </style>
+      <t t-set="object" t-value="partner"/>
+      <t t-set="breadcrumbs_searchbar" t-value="True"/>
+      <div t-if="not video_albums_line" class="pt96 pb96">
+        <div class="container text-center no-data">
+          <img src="/gadr_website/static/src/img/no_data.png" class="img img-fluid" alt="..."/>
+          <h2>There are Currently no video Albums.</h2>
+        </div>
+      </div>
+      <t t-else="">
+        <section class="s_image_gallery o_spc-small o_masonry pt24 pb24 o_colored_level" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
+          <div class="container">
+            <div class="row s_nb_column_fixed">
+              <t t-foreach="video_albums_line" t-as="albums_line">
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                  <iframe
+                  width="300"
+                  height="260"
+                  t-att-src="albums_line.link_video"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="allowfullscreen"
+              />
+                </div>
+              </t>
+            </div>
+          </div>
+          <div t-if="pager" class="o_portal_pager d-flex justify-content-center">
+            <t t-call="portal.pager"/>
+          </div>
+        </section>
+      </t>
+
+    </t>
+  </template>
+
+</odoo>

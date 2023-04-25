@@ -1,0 +1,34 @@
+<odoo>
+  <record id="carousel_slide_form" model="ir.ui.view">
+    <field name="name">carousel.slide.form</field>
+    <field name="model">carousel.slide</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <field name="binary_file" widget="image" required="1" class="oe_avatar" options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
+          <div class="oe_title mb24">
+              <field class="text-break" name="name" readonly="1"/>
+            
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="carousel_slide_view_tree" model="ir.ui.view">
+    <field name="name">carousel.slide.view.tree</field>
+    <field name="model">carousel.slide</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="carousel_slide_action" model="ir.actions.act_window">
+    <field name="name">Carousel Slide</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">carousel.slide</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+</odoo>

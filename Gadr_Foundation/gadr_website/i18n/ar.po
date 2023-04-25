@@ -1,0 +1,713 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gadr_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-30 00:20+0000\n"
+"PO-Revision-Date: 2023-01-30 00:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span class=\"carousel-control-next-icon\"/>\n"
+"              <span class=\"visually-hidden o_default_snippet_text\">Next</span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span class=\"carousel-control-prev-icon\"/>\n"
+"              <span class=\"visually-hidden o_default_snippet_text\">Previous</span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.visitor_thanks_ir_ui_view
+msgid ""
+"<span class=\"fa-solid fa-check rounded-circle icon p-1\"/>\n"
+"                                      <span>Your message has been sent <b>successfully</b></span>"
+msgstr ""
+"<span class=\"fa-solid fa-check rounded-circle icon p-1\"/> <span>تم ارسال "
+"رسالتك <b>بنجاح</b></span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.costum_portal_searchbar
+msgid ""
+"<span class=\"navbar-toggler p-4\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#o_portal_navbar_content\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle filters\">\n"
+"        <span class=\"navbar-toggler-icon small\"/>\n"
+"      </span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span class=\"s_website_form_label_content\">Email</span>\n"
+"                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">الأيميل</span>\n"
+"                                <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span class=\"s_website_form_label_content\">Name</span>\n"
+"                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">الأسم</span>\n"
+"                                <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "<span class=\"s_website_form_label_content\">Phone Number</span>"
+msgstr "<span class=\"s_website_form_label_content\">رقم الجوال</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "<span class=\"s_website_form_label_content\">City</span>"
+msgstr "<span class=\"s_website_form_label_content\">المنطقة</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.costum_portal_searchbar
+msgid "<span class=\"small me-1 navbar-text\">Filter By:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">الفلترة بـ:</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.costum_portal_searchbar
+msgid "<span class=\"small me-1 navbar-text\">Group By:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">التجميع بـ:</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.costum_portal_searchbar
+msgid "<span class=\"small me-1 navbar-text\">Sort By:</span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\"> in the field of human rights and spreading awareness\n"
+"                                                  and the culture of community dialogue.</span>"
+msgstr "<span>في مجال حقوق الانسان ونشر الوعي وثقافة الحوار المجتمعي.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">Development of women and enhance their developmental \n"
+"                                                  role in community service.</span>"
+msgstr "<span>تنمية المرأة وتعزيز دورها التنموي في خدمة المجتمع.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">and networking in achieving the goals of "
+"sustainable development.</span>"
+msgstr "والتشبيك في تحقيق أهداف التنمية المستدامة."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">develop the values of national loyalty and enhance\n"
+"                                                     the concept of participation in society.</span>"
+msgstr ""
+"<span>تنمية قيم الولاء الوطني وتعزيز مفهوم المشاركة في المجتمع.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">early community recovery and achieve living\n"
+"                                                   stability for local communities.</span>"
+msgstr ""
+"<span>التعافي المبكر للمجتمع وتحقيق الاستقرار المعيشي للمجتمعات "
+"المحلية.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">improve the standard of living for society by developing the skills\n"
+"                                                     of young people and qualifying them to integrate into the labor market.</span>"
+msgstr ""
+"تحسين المستوى المعيشي للمجتمع من خلال تنمية مهارات الشباب وتأهيلهم للاندماج "
+"في سوق العمل."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">providing humanitarian aid to communities affected\n"
+"                                                   by wars and conflicts and promoting the principle \n"
+"                                                   of peaceful coexistence.</span>"
+msgstr ""
+"<span>تقديم المساعدات الإنسانية للمجتمعات المتضررة من الحروب والنزاعات "
+"وتعزيز مبدأ التعايش السلمي.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span style=\"text-indent:10px;\">the Foundation's role with the local authority and donor\n"
+"                                                  organizations internally and externally.</span>"
+msgstr ""
+"<span>دور المؤسسة مع السلطة المحلية والمنظمات المانحة داخليا وخارجيا.</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<span>\n"
+"                    <i class=\"fa-regular fa-envelope\"/>\n"
+"                       info@gadr-ye.org\n"
+"                  </span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<span>\n"
+"                    <i class=\"fa-solid fa-globe\"/>\n"
+"                         www.gadr-ye.org\n"
+"                  </span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<span>\n"
+"                    <i class=\"fa-solid fa-mobile-screen\"/>\n"
+"                          +967 773526203\n"
+"                  </span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<span>\n"
+"                    <i class=\"fa-solid fa-mobile-screen\"/>\n"
+"                        +967 715497840\n"
+"                  </span>"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid ""
+"<span>Empower the most economically, socially, \n"
+"                                                  and developmentally vulnerable people.</span>"
+msgstr "<span>تمكين الفئات الأكثر ضعفًا اقتصاديًا واجتماعيًا وتنمويًا.</span>"
+
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span>View Album</span>\n"
+"                                    <i class=\"fa-regular fa-eye\"/>"
+msgstr ""
+"<span>عرض ألبوم</span>\n"
+"                                    <i class=\"fa-regular fa-eye\"/>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_video_albums
+msgid ""
+"<span>View Album</span>\n"
+"                      <i class=\"fa-regular fa-eye\"/>"
+msgstr ""
+"<span>عرض ألبوم</span>\n"
+"                      <i class=\"fa-regular fa-eye\"/>"
+
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_photo_albums
+msgid ""
+"<span>View Album</span>\n"
+"                    <i class=\"fa-regular fa-eye\"/>"
+msgstr ""
+"<span>عرض ألبوم</span>\n"
+"                    <i class=\"fa-regular fa-eye\"/>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "About us"
+msgstr "من نحن"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "About Us"
+msgstr "من نحن"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Advocacy and lobbying"
+msgstr "المناصرة وكسب التأييد"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.modal_template
+msgid "Close"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "#steady_steps_towards_sustainability"
+msgstr "#خطوات_ثابتة_نحو_الاستدامة"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Contribute To"
+msgstr "الإسهام في"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Events"
+msgstr "الفعاليات"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_events_page
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_home_events_page
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_home_menuevents
+msgid "Events"
+msgstr "فعاليات"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Goals"
+msgstr "أهدافنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Home"
+msgstr "الصفحة الرئسية"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Involving and activating"
+msgstr "المشاركة والتفعيل"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span>\n"
+"                Media\n"
+"              </span>"
+msgstr ""
+"<span>\n"
+"                الألبومات\n"
+"              </span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Medical"
+msgstr "طبي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Message"
+msgstr "رسالتنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "My Website"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Next"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Our Goals"
+msgstr "أهدافنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_home_photo_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_home_photo_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_photo_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_photo_albums_infos
+msgid "Photo Albums"
+msgstr "ألبوم الصور"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Previous"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Project"
+msgstr "المشاريع"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_consultation_requests
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_home_menu_projects
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_home_projects_page
+msgid "Projects"
+msgstr "مشاريعنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Promote the principle of partnership"
+msgstr "تعزيز مبدأ الشراكة"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.costum_portal_searchbar
+msgid "Search"
+msgstr "بحث"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span>\n"
+"            Sectors\n"
+"          </span>"
+msgstr ""
+"<span>\n"
+"            قطاعات عملنا\n"
+"          </span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "Seiyun - Algeria St - Flhoum Bld"
+msgstr "سيئون - شارع الجزائر - عمارة فلهوم"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Above the University Student Affairs Procuratorate Seiyun"
+msgstr "فوق نيابة شئون طلاب جامعة سيئون"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Slide 1"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Slide 2"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Sustainable solutions for a bright future"
+msgstr "حلول مستدامة لمستقبل مضيء"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.visitor_thanks_ir_ui_view
+msgid "Thank You!"
+msgstr "شكراً لك!"
+
+#. module: gadr_website   
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"It is a non-profit organization started in 2021 in \n"
+"                        Yemen under license No. (2021566/) by the \n"
+"                        Ministry of Social Affairs and Labor. This \n"
+"                        organization aims at developing and \n"
+"                        empowering the target groups of society by \n"
+"                        achieving the Millennium Development Goals \n"
+"                        and pursuing to develop the individuals and \n"
+"                        promoting the awareness of the public rights."
+msgstr ""
+"هي منظمة غير ربحية تأسست عام ٢٠٢١م في \n"
+"                        الجمهورية اليمنية بموجب ترخيص وزارة الشؤون \n"
+"                        الاجتماعية و العمل رقم (٥٦٦/٢٠٢١م ) تسعى لتنمية \n"
+"                        و تمكين فئات المجتمع المستهدفة من خلال تحقيق \n"
+"                        أهداف الألفية الإنمائية و السعي لتنمية الأفراد و \n"
+"                        التوعية بالحقوق العامة."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"It is a non-profit organization started in 2021 in \n"
+"                  Yemen under license No. (2021566/) by the \n"
+"                  Ministry of Social Affairs and Labor. This \n"
+"                  organization aims at developing and \n"
+"                  empowering the target groups of society by \n"
+"                  achieving the Millennium Development Goals \n"
+"                  and pursuing to develop the individuals and \n"
+"                  promoting the awareness of the public rights."
+msgstr ""
+"هي منظمة غير ربحية تأسست عام ٢٠٢١م في \n"
+"                  الجمهورية اليمنية بموجب ترخيص وزارة الشؤون \n"
+"                  الاجتماعية و العمل رقم (٥٦٦/٢٠٢١م ) تسعى لتنمية \n"
+"                  و تمكين فئات المجتمع المستهدفة من خلال تحقيق \n"
+"                  أهداف الألفية الإنمائية و السعي لتنمية الأفراد و \n"
+"                  التوعية بالحقوق العامة."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_events_page
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "There are Currently no Events."
+msgstr "لا توجد فعاليات حاليا."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_photo_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_photo_albums_infos
+msgid "There are Currently no Photo Albums."
+msgstr "لا توجد ألبومات صور حاليا."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_my_consultation_requests
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "There are Currently no Projects."
+msgstr "لا يوجد حاليا أي مشاريع."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_video_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_video_albums_infos
+msgid "There are Currently no video Albums."
+msgstr "لا يوجد حاليا أي ألبومات فيديو."
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Toggle navigation"
+msgstr "تبديل التنقل"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Registration Form"
+msgstr "استمارة التسجيل "
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Vision"
+msgstr "رؤيتنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Water and the environment"
+msgstr "المياه والبيئة"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.visitor_thanks_ir_ui_view
+msgid "We will get back to you shortly."
+msgstr "نحن سوف نعود اليكم في وقت قريب."
+
+#. module: gadr_website
+#: model:ir.model,name:gadr_website.model_website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "Work To"
+msgstr "العمل على"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "agricultural"
+msgstr "زراعي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "climate"
+msgstr "المناخ"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "economist"
+msgstr "اقتصادي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "educational"
+msgstr "تعليمي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "events"
+msgstr "فعاليات"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "img22"
+msgstr ""
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "politician"
+msgstr "سياسي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "Al Sector"
+msgstr "القطاع"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "sector"
+msgstr "قطاع"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "social"
+msgstr "اجتماعي"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "sustainable for human empowerment"
+msgstr "استدامة من أجل تمكين الإنسان"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "training"
+msgstr "تدريب"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_video_albums
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_video_albums_infos
+msgid "Video Albums"
+msgstr "البوم الفيديو"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid "view more"
+msgstr "عرض المزيد"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.aboutus_page_template
+msgid "vision"
+msgstr "رؤيتنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "Name"
+msgstr "الاسم"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "Topic"
+msgstr "الموضوع"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "Email"
+msgstr "الإيميل"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "comment"
+msgstr "تعليق"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid ""
+"Send\n"
+"                                                    Your Message"
+msgstr "إرسال رسالتك"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "<strong>Email</strong>"
+msgstr "<strong>الإيميل</strong>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "<strong>Address</strong>"
+msgstr "<strong>العنوان</strong>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_contact_us
+msgid "<strong>Phone</strong>"
+msgstr "<strong>الجوال</strong>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"<span>\n"
+"                Our partners\n"
+"              </span>"
+msgstr ""
+"<span>\n"
+"                شركاؤنا\n"
+"              </span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.homepage
+msgid ""
+"Global Aid for Development and Rights (GADR) is a non-profit organization "
+"established in 2021 in the Republic of Yemen that seeks to develop and "
+"empower targeted societal groups through achieving the Millennium "
+"Development Goals and striving for the development of individuals and "
+"raising awareness on public rights."
+msgstr ""
+"منظمة الغوث العالمية للتنمية والحقوق (GADR) هي منظمة غير ربحية تأسست عام 2021 في الجمهورية اليمنية وتسعى إلى تطوير وتمكين الفئات المجتمعية المستهدفة من خلال تحقيق الأهداف الإنمائية للألفية ، والسعي لتنمية الأفراد ، وزيادة الوعي الحقوق العامة."
+
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_gadr_projects_event_requests
+msgid "Projects and events"
+msgstr "المشاريع والفعاليات"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.portal_gadr_projects_event_requests
+msgid "There are Currently no Projects and events."
+msgstr "لا يوجد حاليا أي مشاريع وفعاليات"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Connect with us"
+msgstr "تواصل معنا"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<span id=\"connect\" class=\"mb-3\" style=\"color: #3f9ec8\">Connect with "
+"us</span>"
+msgstr ""
+"<span id=\"connect\" class=\"mb-3\" style=\"color: #3f9ec8\">تواصل "
+"معنا</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Our Location"
+msgstr "موقعنا"
+
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "<span class=\"addres mb-3\" style=\"color: #3f9ec8;\">Our Location</span>"
+msgstr "<span class=\"addres mb-3\" style=\"color: #3f9ec8;\">موقعنا</span>"
+
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid ""
+"<i class=\"fa fa-map-marker\"/>\n"
+"                              <span>GADR ORGANIZATION</span>"
+msgstr ""
+"<i class=\"fa fa-map-marker\"/>\n"
+"                            <span>منظمة قادر</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "<span class=\"mt-4\">Copyright reserved for Gadr Organization @</span>"
+msgstr "<span class=\"mt-4\">جميع الحقوق محفوظة لدى منظمة قادر @</span>"
+
+#. module: gadr_website
+#: model_terms:ir.ui.view,arch_db:gadr_website.beauty_website_defaults
+msgid "Media"
+msgstr "الألبومات"
